@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salaheddine El Mokhtari - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="avatar.png" alt="Avatar" class="avatar" />
+      <h1 id="name">Salaheddine El Mokhtari</h1>
+      <p id="tagline">Junior Software Developer - Brussels</p>
+      <div class="lang-switch">
+        <button onclick="switchLang('en')">EN</button> | <button onclick="switchLang('fr')">FR</button>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="Salaheddine_El_Mokhtari_CV.pdf" target="_blank">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2 data-en="About Me" data-fr="À propos de moi"></h2>
+        <p data-en="I’m a final-year Business IT student passionate about full-stack development. I enjoy building modern, scalable apps and learning new technologies."
+           data-fr="Je suis étudiant en dernière année d'informatique de gestion, passionné par le développement full-stack. J’aime créer des applications modernes, scalables, et apprendre de nouvelles technologies.">
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 data-en="Projects" data-fr="Projets"></h2>
+        <ul>
+          <li><strong>Tricount Clone</strong> – C#/.NET, SQL, MVVM</li>
+          <li><strong>My Forms</strong> – ASP.NET backend, Angular frontend</li>
+          <li><strong>Notes Manager</strong> – PHP, MySQL, HTML/CSS</li>
+          <li><strong>Sokoban Game</strong> – Java puzzle logic</li>
+          <li><strong>SVI Internship Tools</strong> – PHP/JS tools for mission management</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 data-en="Skills" data-fr="Compétences"></h2>
+        <p>Frontend: HTML, CSS, JavaScript, Angular<br>
+           Backend: PHP, C#, Node.js, .NET<br>
+           DB: MySQL, MariaDB, SQLite<br>
+           Tools: Git, Trello, Bitbucket</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 data-en="Contact" data-fr="Contact"></h2>
+        <form action="mailto:salaheem02@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p>
+          <a href="https://github.com/" target="_blank">GitHub</a> |
+          <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Salaheddine El Mokhtari</p>
+  </footer>
+</body>
+</html>
