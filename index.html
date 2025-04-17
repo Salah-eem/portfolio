@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +10,15 @@
 <body>
   <header>
     <div class="container">
-      <img src="avatar.png" alt="Avatar" class="avatar" />
-      <h1 id="name">Salaheddine El Mokhtari</h1>
-      <p id="tagline">Junior Software Developer - Brussels</p>
+      <img src="avatar.png" alt="Professional Avatar" class="avatar" />
+      <h1 id="typewriter" class="typewriter"></h1>
+      <p id="tagline">Junior Software Developer | Based in Brussels</p>
       <div class="lang-switch">
-        <button onclick="switchLang('en')">EN</button> | <button onclick="switchLang('fr')">FR</button>
+        <button onclick="switchLang('en')">EN</button> | 
+        <button onclick="switchLang('fr')">FR</button>
       </div>
       <nav>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -27,46 +28,48 @@
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="animate-on-scroll">
       <div class="container">
         <h2 data-en="About Me" data-fr="À propos de moi"></h2>
-        <p data-en="I’m a final-year Business IT student passionate about full-stack development. I enjoy building modern, scalable apps and learning new technologies."
-           data-fr="Je suis étudiant en dernière année d'informatique de gestion, passionné par le développement full-stack. J’aime créer des applications modernes, scalables, et apprendre de nouvelles technologies.">
+        <p data-en="I am a final-year Business IT student with a strong interest in full-stack development. I enjoy creating modern, scalable web applications and continuously exploring new technologies and frameworks."
+           data-fr="Je suis étudiant en dernière année d'informatique de gestion avec un fort intérêt pour le développement full-stack. J’aime créer des applications web modernes et scalables, tout en explorant de nouvelles technologies et frameworks.">
         </p>
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="animate-on-scroll">
       <div class="container">
         <h2 data-en="Projects" data-fr="Projets"></h2>
         <ul>
-          <li><strong>Tricount Clone</strong> – C#/.NET, SQL, MVVM</li>
-          <li><strong>My Forms</strong> – ASP.NET backend, Angular frontend</li>
-          <li><strong>Notes Manager</strong> – PHP, MySQL, HTML/CSS</li>
-          <li><strong>Sokoban Game</strong> – Java puzzle logic</li>
-          <li><strong>SVI Internship Tools</strong> – PHP/JS tools for mission management</li>
+          <li><strong>Tricount Clone</strong> – Expense manager built with C#/.NET and SQL using MVVM architecture.</li>
+          <li><strong>My Forms</strong> – Form management web app with ASP.NET backend and Angular frontend.</li>
+          <li><strong>Notes Manager</strong> – Student grading system using PHP and MySQL with a responsive interface.</li>
+          <li><strong>Sokoban Game</strong> – Puzzle game developed in Java with full logic and movement handling.</li>
+          <li><strong>SVI Tools</strong> – Volunteer mission management tools built during my internship using PHP and JavaScript.</li>
         </ul>
       </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="animate-on-scroll">
       <div class="container">
         <h2 data-en="Skills" data-fr="Compétences"></h2>
-        <p>Frontend: HTML, CSS, JavaScript, Angular<br>
-           Backend: PHP, C#, Node.js, .NET<br>
-           DB: MySQL, MariaDB, SQLite<br>
-           Tools: Git, Trello, Bitbucket</p>
+        <p>
+          <strong>Frontend:</strong> HTML, CSS, JavaScript, Angular<br>
+          <strong>Backend:</strong> PHP, C#, Node.js, .NET<br>
+          <strong>Databases:</strong> MySQL, MariaDB, SQLite<br>
+          <strong>Tools & Methods:</strong> Git, Trello, Bitbucket, MVC, MVVM
+        </p>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate-on-scroll">
       <div class="container">
         <h2 data-en="Contact" data-fr="Contact"></h2>
         <form action="mailto:salaheem02@gmail.com" method="POST">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send</button>
+          <button type="submit">Send Message</button>
         </form>
         <p>
           <a href="https://github.com/" target="_blank">GitHub</a> |
@@ -77,7 +80,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Salaheddine El Mokhtari</p>
+    <p>© 2025 Salaheddine El Mokhtari. All rights reserved.</p>
   </footer>
 </body>
 </html>
